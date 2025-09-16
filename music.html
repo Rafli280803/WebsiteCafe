@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Music</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+  <header class="header">
+    <div id="menu-btn" class="fas fa-bars"></div>
+    <a href="#" class="logo" style="display: flex; align-items: center; gap: 0.5rem;">
+      <img src="image/logo3.png" alt="Icon" style="width: 70px; height: 70px;">
+    </a>
+    <nav class="navbar">
+      <a href="index.html">home</a>
+      <a href="menu.html">menu</a>
+      <a href="gallery.html">gallery</a>
+      <a href="music.html" class="active">music</a>
+    </nav>
+    <a href="#book" class="btn">Login</a>
+  </header>
+
+  <section class="halmenu">
+    <h2 class="heading">WE’RE PLAYLIST</h2>
+
+    <div class="playlist-container">
+
+      <div class="playlist-item">
+        <img src="image/news2.png" alt="cover 1" class="music-cover">
+        <div class="music-text">
+          <div class="judul">Sunset Lover</div>
+          <div class="penyanyi">Petit Biscuit</div>
+        </div>
+      </div>
+
+      <div class="playlist-item">
+        <img src="image/news2.png" alt="cover 2" class="music-cover">
+        <div class="music-text">
+          <div class="judul">Let Her Go</div>
+          <div class="penyanyi">Passenger</div>
+        </div>
+      </div>
+
+      <div class="playlist-item">
+        <img src="image/news2.png" alt="cover 3" class="music-cover">
+        <div class="music-text">
+          <div class="judul">Someone You Loved</div>
+          <div class="penyanyi">Lewis Capaldi</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="spotify-button-container">
+      <a href="https://open.spotify.com/" target="_blank" class="spotify-button">
+        <i class="fab fa-spotify"></i> View on Spotify
+      </a>
+    </div>
+
+  </section>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const navbar = document.querySelector('.navbar');
+    menuBtn.addEventListener('click', () => {
+      navbar.classList.toggle('active');
+    });
+  </script>
+  
+</body>
+</html>

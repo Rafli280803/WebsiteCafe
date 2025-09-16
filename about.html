@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div id="menu-btn" class="fas fa-bars"></div>
+    <a href="#" class="logo" style="display: flex; align-items: center; gap: 0.5rem;">
+      <img src="image/logo3.png" alt="Icon" style="width: 70px; height: 70px;">
+    </a>
+    <nav class="navbar">
+      <a href="index.html">home</a>
+      <a href="menu.html">menu</a>
+      <a href="gallery.html">gallery</a>
+      <a href="news.html">news</a>
+    </nav>
+    <a href="#book" class="btn">Login</a>
+  </header>
+
+  <!-- About Us Section -->
+  <section class="about">
+  <h2 class="heading">About Poison House</h2>
+  <div class="about-content">
+    <img src="image/logo3.png" alt="Cafe Interior">
+    <div class="text">
+      <p>
+        Poison House is more than just a cafe — it's a cultural hub...
+      </p>
+      <p>
+        Since our founding in 2021, we’ve hosted community...
+      </p>
+    </div>
+  </div>
+</section>
+
+
+</body>
+</html>
+
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    const header = document.querySelector(".header");
+    const about = document.querySelector(".about");
+    const headerHeight = header.offsetHeight;
+    about.style.marginTop = `${headerHeight + 60}px`; // +60px agar lebih aman
+  });
+</script>

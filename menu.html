@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+  <header class="header">
+    <div id="menu-btn" class="fas fa-bars"></div>
+    <a href="#" class="logo" style="display: flex; align-items: center; gap: 0.5rem;">
+      <img src="image/logo3.png" alt="Icon" style="width: 70px; height: 70px;">
+    </a>
+    <nav class="navbar">
+      <a href="index.html">home</a>
+      <a href="menu.html">menu</a>
+      <a href="gallery.html">gallery</a>
+      <a href="#music">music</a>
+    </nav>
+    <a href="#book" class="btn">Login</a>
+  </header>
+
+  <section class="halmenu">
+    <h2 class="heading">Menu</h2>
+    <h3 class="subheading">Drink</h3>
+
+    <div class="box-container">
+      <div class="box">
+        <img src="image/menu/WhatsApp Image 2025-05-24 at 11.04.31.jpeg" alt="Menu image 1">
+        <div class="content">
+          <h3>COCO LIMUN SIGNATURE</h3>
+        </div>
+      </div>
+      <div class="box">
+        <img src="image/menu/WhatsApp Image 2025-05-24 at 11.04.32 (1).jpeg" alt="Menu image 2">
+        <div class="content">
+          <h3>INFUSE ROSELLA FRESH ORANGE TONIC WATER LIME</h3>
+        </div>
+      </div>
+      <div class="box">
+        <img src="image/menu/WhatsApp Image 2025-05-24 at 11.04.32 (2).jpeg" alt="Menu image 3">
+        <div class="content">
+          <h3>BUTTERFLY PEA FRESH ORANGE LIME</h3>
+        </div>
+      </div>
+      <div class="box">
+        <img src="image/menu/WhatsApp Image 2025-05-24 at 11.04.32.jpeg" alt="Menu image 4">
+        <div class="content">
+          <h3>BUTTERSCOTCH FRESH ORANGE INFUSE CINNAMON COCONUT WATER</h3>
+        </div>
+      </div>
+    </div>
+    
+    <div class="box-container">
+        <div class="box">
+          <img src="image/menu/WhatsApp Image 2025-05-24 at 11.04.31.jpeg" alt="Menu image 1">
+          <div class="content">
+            <h3>COCO LIMUN SIGNATURE</h3>
+          </div>
+        </div>
+        <div class="box">
+          <img src="image/menu/WhatsApp Image 2025-05-24 at 11.04.32 (1).jpeg" alt="Menu image 2">
+          <div class="content">
+            <h3>INFUSE ROSELLA FRESH ORANGE TONIC WATER LIME</h3>
+          </div>
+        </div>
+        <div class="box">
+          <img src="image/menu/WhatsApp Image 2025-05-24 at 11.04.32 (2).jpeg" alt="Menu image 3">
+          <div class="content">
+            <h3>BUTTERFLY PEA FRESH ORANGE LIME</h3>
+          </div>
+        </div>
+        <div class="box">
+          <img src="image/menu/WhatsApp Image 2025-05-24 at 11.04.32.jpeg" alt="Menu image 4">
+          <div class="content">
+            <h3>BUTTERSCOTCH FRESH ORANGE INFUSE CINNAMON COCONUT WATER</h3>
+          </div>
+        </div>
+      </div>
+
+    <h3 class="subheading">Food</h3>
+
+    <div class="box-container">
+      <div class="box">
+        <img src="image/menupoison.png" alt="Menu image 1">
+        <div class="content">
+          <h3>MMMMMMMM</h3>
+        </div>
+      </div>
+      <div class="box">
+        <img src="image/news2.png" alt="Menu image 2">
+        <div class="content">
+          <h3>NNNNNNNNNN</h3>
+        </div>
+      </div>
+      <div class="box">
+        <img src="image/news3.png" alt="Menu image 3">
+        <div class="content">
+          <h3>RRRRRRRRRRR</h3>
+        </div>
+      </div>
+      <div class="box">
+        <img src="image/news4.png" alt="Menu image 4">
+        <div class="content">
+          <h3>NNNNNNNNNNNN</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+</body>
+</html>
+
+<script>
+    const menuBtn = document.getElementById('menu-btn');
+    const navbar = document.querySelector('.navbar');
+  
+    menuBtn.addEventListener('click', () => {
+      navbar.classList.toggle('active');
+    });
+  </script>
